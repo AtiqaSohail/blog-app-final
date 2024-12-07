@@ -89,7 +89,6 @@
       <section class="main-content">
         <h2>Trending Topics</h2>
       
-        <div class="card">
           <div class="card-content">
             <h4>Mar 1</h4>
             <h3>Powerful Trading Tools and Features for Experienced Investors</h3>
@@ -113,43 +112,40 @@
       </section>
     </div>
   </main>
- 
-
-<!-- post-app -->
- <center>
-     <nav class="navbar bg-body-tertiary"> -->
+     <center>
+<!--         <nav class="navbar bg-body-tertiary"> -->
+<!--             <div class="container-fluid">
+                <a class="navbar-brand" href="#">Post App</a>
+            </div>
+        </nav> -->
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Post App</a>
-        </div>
-    </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="p-4 col-4">
-                <div class="card p-2">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Title:</label>
-                        <input id="title" type="text" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Description:</label>
-                        <textarea id="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div class="row">
+                <div class="p-4 col-4">
+                    <div class="card p-2">
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Title:</label>
+                            <input id="title" type="text" class="form-control">
                         </div>
-    
-                        <div class="mt-3">
-                            <button onclick="post()" class="btn">Post</button>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description:</label>
+                            <textarea id="description" class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <button onclick="post()" class="btn btn-primary">Post</button>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="post" class="p-4 col-8">
-               
-           
+                <div class="p-4 col-8" id="post">
+                    <!-- Posts will be dynamically added here -->
+                </div>
             </div>
         </div>
-    </div>
     </center>
-     
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.min.js"></script>
+    <script src="./post.js"></script>
+
+
 
   
 <!-- newsletter section -->
@@ -177,7 +173,7 @@
         crossorigin="anonymous"></script>
         <!-- <script  src="./PoatApp/post.js"></script>  -->
         <script type="module" src="./firebase.js"></script>
-        <script type="module" src="./post.js"></script> 
+         <script  src="./post.js"></script> 
        
 </body>
 </html>
