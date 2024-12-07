@@ -19,8 +19,11 @@ import {
   
   // Sign Up Function
   let signUp = async () => {
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
+    // let email = document.getElementById("email").value;
+    // let password = document.getElementById("password").value;
+    let email = document.getElementById("loginEmail").value;
+let password = document.getElementById("loginPassword").value;
+
   
     try {
       // Create user with email and password
